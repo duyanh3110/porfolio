@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- css -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <title>Project</title>
+  </head>
+  <body class="main-bg" onload="makeAlert()">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="about.html">DAN</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About me</a>
+          </li>
+          <li><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Projects -->
+    <div id="current-project"></div>
+    <div
+      class="project"
+      id="project1"
+      onscroll="makeMessenger(1)"
+      onmouseover="changeColor(this)"
+      onmouseout="normalColor(this)"
+    >
+      <h2 class="project-title">Manage App</h2>
+      <div class="project-img">
+        <img src="images/projects/project1.png" alt="" />
+      </div>
+      <div class="project-des">
+        This application will help user manager their restaurant easier. This
+        application have 3 version for 3 member at restaurant: A waiter, a
+        cashier and a manager. A waiter will have a list of table at restaurant.
+        He will choose table to serve and get the order information of customer.
+        Then all informations will sent to cashier. Cashier will receive an
+        information of food and then print at 2 version: one for customer with
+        the receipt and the other for the cook to make a food. At manager page
+        will screen all information about restaurnt such as: income, material,
+        employee.
+      </div>
+    </div>
+    <div class="project" id="project2" onscroll="makeMessenger(2)">
+      <h2 class="project-title">Sneakers</h2>
+      <div class="project-img">
+        <img src="images/projects/project2.jpg" alt="" />
+      </div>
+      <div class="project-des">
+        This application is serving an order for customer and then delivery to
+        their address. First customer need to create an order and give their
+        information about name address and phone number. After using the meal,
+        they can get the feed to restaurant to make restaurant improve their
+        service.
+      </div>
+    </div>
+    <div class="project" id="project3" onscroll="makeMessenger(3)">
+      <h2 class="project-title">Demo Analyze Github</h2>
+      <div class="project-img">
+        <img src="images/projects/project3.png" alt="" />
+      </div>
+      <div class="project-des">
+        This application is make a report for a pull request in Github. First,
+        user need to give a authozired to mention user's at Github. Then user
+        will give a information about the pull request like url of pull request
+        at github. After submit all informations, user will give a mail when the
+        report is commented at Github.
+      </div>
+    </div>
+  </body>
+  <script src="js/project.js"></script>
+</html>

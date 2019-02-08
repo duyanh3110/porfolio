@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Skills</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="main-bg" onload="displaySkills()">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="about.html">DAN</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About me</a>
+          </li>
+          <li><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Contact me</h1>
+      <table style="width:100%">
+        <tr>
+          <th>Skills</th>
+          <th>Contents</th>
+        </tr>
+        <tr>
+          <td>Front-end</td>
+          <td>CSS3, SASS, SCSS, Javascript, ES6, React</td>
+        </tr>
+        <tr>
+          <td>Back-end</td>
+          <td>NodeJS, PHP, APIs, NoSQL</td>
+        </tr>
+        <tr>
+          <td>CMS</td>
+          <td>Wordpress</td>
+        </tr>
+        <tr>
+          <td>Apps</td>
+          <td>React Native</td>
+        </tr>
+        <tr>
+          <td>Cloud</td>
+          <td>Firebase</td>
+        </tr>
+        <tr>
+          <td>E-commerce</td>
+          <td>Woocommerce</td>
+        </tr>
+      </table>
+
+      <div id="skills-img" class="text-center">
+        <img src="images/skills/skill-1.png" alt="" width="80%" />
+        <div id="img-lists">
+          <img src="images/skills/skill-2.png" alt="" width="20%" />
+          <img src="images/skills/skill-3.png" alt="" width="20%" />
+          <img src="images/skills/skill-4.png" alt="" width="20%" />
+          <img src="images/skills/skill-5.png" alt="" width="20%" />
+        </div>
+      </div>
+
+      <div id="js-part">
+        <h1>JS Exercise</h1>
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            id="skill-input"
+            placeholder="Your skill"
+            aria-label="Your skill with a button addons"
+            aria-describedby="button-addon"
+          />
+          <div class="input-group-append" id="button-addon">
+            <button
+              class="btn btn-primary"
+              type="button"
+              onclick="updateSkills()"
+            >
+              Add Skill
+            </button>
+          </div>
+        </div>
+        <div id="list-skills"></div>
+        <div id="curr-skills"></div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/skills.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
